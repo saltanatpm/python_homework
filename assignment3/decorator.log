@@ -1,0 +1,30 @@
+function: hello
+positional parameters: none
+keyword parameters: none
+return: None
+-----------------------------
+function: test_positional
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+-----------------------------
+function: test_keyword
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 25}
+return: <function logger_decorator at 0x000001E4A87BA2A0>
+-----------------------------
+function: hello
+positional parameters: none
+keyword parameters: none
+return: None
+-----------------------------
+function: test_positional
+positional parameters: (10, 20, 30)
+keyword parameters: none
+return: True
+-----------------------------
+function: test_keyword
+positional parameters: none
+keyword parameters: {'name': 'Alice', 'age': 25}
+return: <function logger_decorator at 0x000002401F84A2A0>
+-----------------------------
