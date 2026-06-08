@@ -18,7 +18,7 @@ time.sleep(10)
 
 books = driver.find_elements(
     By.CSS_SELECTOR,
-    "li.YOUR_RESULT_CLASS"
+    "li.cp-search-result-item"
 )
 
 results = []
@@ -28,30 +28,27 @@ for book in books:
     try:
         title = book.find_element(
             By.CSS_SELECTOR,
-            "YOUR_TITLE_SELECTOR"
+            'a[data-item-id="title"]'
         ).text
     except:
         title = ""
 
     author_elements = book.find_elements(
         By.CSS_SELECTOR,
-        "YOUR_AUTHOR_SELECTOR"
+        'a[data-item-id="author"]'
     )
 
-    authors = [a.text for a in author_elements]
+    authors = [a.text for a in author_elements if a.text.strip()]
 
     author_text = "; ".join(authors)
 
     try:
         info_div = book.find_element(
             By.CSS_SELECTOR,
-            "YOUR_FORMAT_DIV_SELECTOR"
+            "span.cp-format-indicator"
         )
 
-        format_year = info_div.find_element(
-            By.TAG_NAME,
-            "span"
-        ).text
+        format_year = info_div.text
 
     except:
         format_year = ""
