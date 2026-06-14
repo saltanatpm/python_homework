@@ -1,0 +1,10 @@
+Challenges Encountered
+
+1. Initially Selenium was not installed in my Python environment, causing a ModuleNotFoundError. 
+I resolved this by installing selenium, webdriver-manager, and pandas using pip.
+
+2. Finding the correct HTML elements on the Durham Library website was challenging because the page contains many nested div 
+elements. I used Chrome Developer Tools to inspect the DOM and identify the correct classes.
+
+3. The OWASP page structure required experimentation with XPath expressions to locate the Top 10 vulnerability links. 
+cUsing browser inspection tools helped me determine the correct XPath selectors.

@@ -1,0 +1,5 @@
+Static visualizations (like matplotlib charts) are fixed images that show a single view of the data. Interactive visualizations (like Plotly) allow users to zoom, hover, filter, and explore data dynamically, which makes patterns easier to discover.
+
+Dashboards are useful for real-time data exploration because they allow users to monitor key metrics continuously and interact with data without needing to rerun code. This is especially valuable in business and analytics environments where decisions depend on up-to-date information.
+
+Interactive tools like Plotly improve data communication in professional settings by making insights easier to understand. Users can explore details on demand, which helps non-technical stakeholders engage with the data and reduces the risk of misinterpretation.
